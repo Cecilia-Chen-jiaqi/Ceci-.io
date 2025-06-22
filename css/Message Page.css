@@ -1,0 +1,245 @@
+* {
+    margin: 1%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffebee;
+    color: #424242;
+    line-height: 1.6; 
+}
+
+header {
+    height: 130px;
+    background-color: #fcc1cb;
+    padding: 15px;
+    border-radius: 55px;
+    transition: transform 1s ease;
+}
+
+header:hover {
+    transform: translateY(-5px); 
+}
+
+nav {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7%;
+  border-radius: 55px;
+  background-color: rgba(255, 255, 255, 0.8); 
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  background-image: linear-gradient(to right, #f7e7e7,#f9d7dd);
+}
+
+.logo:hover {
+  transform: rotate(0deg) scale(0.9); 
+}
+
+.logo {
+    font-family: cursive;
+    font-size: 2.2vw;
+    font-weight: 800;
+    color: rgb(64, 46, 46);
+    margin: 0.5%;
+    padding: 0.7%;
+    margin-left: 1.2%;
+    background-color: rgba(237, 226, 226, 0.5);
+    border-radius: 25px;
+    background: linear-gradient(to right, #f5d7d7, #ffedf9); 
+    text-shadow: 2px 2px 4px rgba(238, 84, 135, 0.2); 
+    transform: rotate(-3deg);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    font-family: cursive;
+    flex-wrap: nowrap; 
+    white-space: nowrap; 
+    font-size: 1.5vw; 
+    margin-right: 80px;
+}
+
+nav ul li {
+    margin-left: 2%;
+    background-color: #ffcaca;
+    padding: 1%;
+    border-radius: 10px;
+}
+
+nav ul li:hover {
+    background-color: #ffecef; 
+}
+
+nav ul li a {
+    color: rgb(30, 23, 23);
+    padding: 5px 10px;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    border-radius: 5px;
+    transition: color 0.5s ease;
+}
+
+nav ul li a:hover {
+    background-color: rgba(93, 73, 72, 0.2);
+    color: #fb7e91;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: -8px;
+    left: 0;
+    background-color: #140c0e;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+nav::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.message-section {
+    width: 100%;
+    margin: 0 auto 30px;
+    padding: 20px;
+    background-color: #efcbcb;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2{
+    font-family: cursive;
+    font-weight: 900px;
+    font-size: 2.0vw;
+    padding: 10px 20px 10px 5px;
+    margin-top: 0; 
+    background-color: #fff;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+}
+
+h2:hover{
+    transform: scale(1.05); 
+    
+}
+
+.message-form {
+    display: grid;
+    grid-template-columns: 20% 80%; 
+    gap: 20px; 
+    width: 90%;
+    padding: 20px;
+    margin-left: 40px;
+    margin-top: 10px;
+    border: thin dotted #7e7e7e;
+    background-color: #fbfde5;
+    border-radius: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); 
+}
+
+.form-row {
+    display: contents; 
+}
+
+.form-label {
+    padding: 12px 15px 12px 15px;
+    text-align: center;
+    font-family: cursive;
+    font-size:1.5vw;
+    font-weight: 900;
+    color: #333;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+.form-label:hover {
+    color: #fdcbcb;
+}
+
+.form-row input, 
+.form-row select, 
+.form-row textarea {
+    padding: 12px; /* 增加内边距 */
+    border: 1px solid #ddd; /* 修改边框宽度 */
+    border-radius: 8px; /* 增加边框圆角 */
+    width: 90%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.form-row input:focus, 
+.form-row select:focus, 
+.form-row textarea:focus {
+    border-color: #ade8fa; /* 聚焦时的边框颜色 */
+    outline: none;
+}
+
+.form-row textarea {
+    height: 120px;
+}
+
+.form-radio-group, .form-checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; 
+    padding: 8px;
+}
+
+.form-radio-label, .form-checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+
+.submit-button, .reset-button {
+    padding: 12px 25px;
+    background-color: #c2ebfa;
+    color: rgb(31, 21, 21);
+    border: none;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.reset-button {
+    
+    height: 45px;
+    margin-top: 0;
+}
+.submit-button{
+    margin-top: 0px;
+    height: 45px;
+}
+.submit-button:hover, .reset-button:hover {
+    opacity: 0.9;
+    background-color: #f9ced4; /* 悬停时的背景颜色 */
+    color: white;
+}
+
+footer {
+  background-color: #fcc1cb;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: large;
+  color: white;
+  text-align: center;
+  padding: 1%;
+  border-radius: 10px;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.05);
+}

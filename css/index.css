@@ -1,0 +1,310 @@
+* {
+  margin: 1%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffebee;
+  color: #424242;
+  line-height: 1.6; 
+}
+
+header {
+    height: 340px;
+    background-color: #fcc1cb;
+    padding: 15px;
+    border-radius: 55px;
+    margin-bottom: 0%;
+}
+
+nav {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7%;
+  border-radius: 55px;
+  background-color: rgba(255, 255, 255, 0.8); 
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  background-image: linear-gradient(to right, #f7e7e7,#f9d7dd);
+}
+
+.logo:hover {
+  transform: rotate(0deg) scale(0.9); /* 鼠标悬停时旋转并放大 */
+}
+
+.logo {
+    font-family: cursive;
+    font-size: 2.2vw;
+    font-weight: 800;
+    color: rgb(64, 46, 46);
+    margin: 0.5%;
+    padding: 0.7%;
+    margin-left: 1.2%;
+    background-color: rgba(237, 226, 226, 0.5);
+    border-radius: 25px;
+    background: linear-gradient(to right, #f5d7d7, #ffedf9); 
+    text-shadow: 2px 2px 4px rgba(238, 84, 135, 0.2); /* 调整文字阴影 */
+    transform: rotate(-3deg);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  font-family: cursive;
+  flex-wrap: nowrap; 
+  white-space: nowrap; 
+  font-size: 1.5vw; 
+  margin-right: 80px;
+}
+
+nav ul li {
+  margin-left: 2%;
+  background-color: #ffcaca;
+  padding: 1%;
+  border-radius: 10px;
+}
+
+nav ul li:hover {
+  background-color: #ffecef; /* 鼠标悬停时改变背景颜色 */
+}
+
+nav ul li a {
+  color: rgb(30, 23, 23);
+  padding: 5px 10px;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  border-radius: 5px;
+  transition: color 0.5s ease;
+}
+
+nav ul li a:hover {
+  background-color: rgba(93, 73, 72, 0.2);
+  color: #fb7e91;
+}
+
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: -8px;
+  left: 0;
+  background-color: #140c0e;
+  transition: width 0.3s ease;
+}
+
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  padding-right: 20px;
+  border-radius: 55px;
+  margin-bottom: 0%;
+  box-shadow: 0 8px 20px rgba(28, 16, 16, 0.1); /* 添加阴影效果 */
+}
+
+nav::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.banner img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 55px;
+  transition: transform 1s ease;
+}
+
+.banner img:hover {
+  transform: scale(1.05); /* 鼠标悬停时放大图片 */
+}
+
+main {
+  margin-top: 0%;
+  padding: 1%;
+  display: block;
+}
+
+.profile {
+  position: relative;
+  display: flex;
+  background-color: white;
+  border-radius: 20px;
+  margin: 1%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 2%;
+  height: auto;
+  transition: box-shadow 0.3s ease; /* 添加过渡效果 */
+}
+
+.profile:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* 鼠标悬停时增强阴影效果 */
+}
+
+.avatar {
+  text-align: center;
+  margin-right: 20px;
+  background-color: #fde1e5;
+  border-radius: 20px;
+  padding: 20px; /* 添加内边距 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* 添加阴影效果 */
+  width: 100%;
+}
+
+.avatar img {
+  margin-top: 35px;
+  width: 80%;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+  transition: transform 0.3s ease; /* 添加过渡效果 */
+}
+
+.avatar img:hover {
+  transform: scale(1.05); /* 鼠标悬停时放大图片 */
+}
+
+.avatar h3{
+    font-family: cursive;
+    font-weight: 900px;
+    font-size: 2vw;
+    padding: 5px 10px 5px 5px;
+    margin-top: 5%; 
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.avatar h3:hover{
+  transform: scale(1.05); 
+}
+
+.information {
+    padding: 20px;
+    background-color: #fde1e5;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); 
+    font-size: 1.3vw;
+}
+
+.about {
+  margin-bottom: 50px;
+  margin: 20px;
+  font-family: cursive;
+  font-size: large;
+}
+
+.about p{
+  position: relative;;
+  padding-left:10px ;
+  padding-right: 10px;
+  text-indent: 2em;
+  box-shadow: 0 8px 8px rgba(13, 12, 12, 0.05); 
+  font-size: 1.2vw;
+  transition: transform 0.3s ease;
+
+}
+
+.about p:hover{
+    transform: scale(1.05); 
+}
+
+.about h2
+{
+  margin-bottom: 15px;
+  color: #e68f87;
+  font-family: cursive;
+  padding: 5px;
+  text-transform: uppercase; 
+  letter-spacing: 2px; 
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.05); 
+  transition: transform 0.3s ease;
+  font-size: 2.2vw;
+
+}
+
+.about h2:hover{
+    transform: scale(1.05); 
+}
+
+.life h2 {
+  margin-bottom: 15px;
+  color: #e68f87;
+  font-family:cursive;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 10px;
+  text-transform: uppercase; 
+  letter-spacing: 2px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); 
+  transition: transform 0.3s ease;
+  font-size: 2.2vw;
+
+}
+
+
+.life h2:hover{
+    transform: scale(1.05); 
+}
+
+.details ul {
+  list-style: none;
+  background-color: #fffafa;
+  border-radius: 20px;
+  padding: 20px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); 
+}
+
+.details ul li {
+  margin-bottom: 5px;
+}
+
+.details ul li span {
+  font-weight: bold;
+}
+
+.life {
+  margin-top: 20px;
+}
+
+.life-pics {
+  display: flex;
+  justify-content: space-between;
+}
+
+.life-pics img {
+  width: 32%;
+  height: auto;
+  border-radius: 5px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease; 
+}
+
+.life-pics img:hover {
+  transform: translateY(-5px); 
+}
+
+footer {
+  background-color: #fcc1cb;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: large;
+  color: white;
+  text-align: center;
+  padding: 1%;
+  border-radius: 10px;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.05);
+}
+

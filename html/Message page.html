@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/Message Page.css">
+    <title>琦 - 在线留言</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+        <div class="logo">🎈 Cecilia's 个人空间</div>
+      <ul>
+        <li><a href="../index.html">首页</a></li>
+        <li><a href="../副页/Resume page.html">我的简历</a></li>
+        <li><a href="../副页/Interests Page.html">我的爱好</a></li>
+        <li><a href="../副页/Social Media Page.html">我的社交媒体</a></li>
+        <li><a href="#" class="active">在线留言</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+     <section class="message-section">
+      <h2><span>📩</span> 留下您的留言 <span>Message</span></h2>
+      
+      <form action="#" method="post" class="message-form">
+
+        <div class="form-row">
+          <label for="name" class="form-label">姓名</label>
+          <input type="text" id="name" name="user_name" placeholder="请输入您的姓名" required>
+        </div>
+        
+        <div class="form-row">
+          <label for="email" class="form-label">邮箱</label>
+          <input type="email" id="email" name="user_email" placeholder="请输入您的邮箱" required>
+        </div>
+        
+        <div class="form-row">
+          <label for="tel" class="form-label">电话</label>
+          <input type="tel" id="tel" name="user_tel" placeholder="请输入您的联系电话">
+        </div>
+        
+        <div class="form-row">
+          <label for="visit-date" class="form-label">留言日期</label>
+          <input type="date" id="visit-date" name="visit_date">
+        </div>
+        
+        <div class="form-row">
+          <label class="form-label">性别</label>
+          <div class="form-radio-group">
+            <label for="male" class="form-radio-label">
+              <input type="radio" id="male" name="gender" value="male"> 男
+            </label>
+            <label for="female" class="form-radio-label">
+              <input type="radio" id="female" name="gender" value="female"> 女
+            </label>
+            <label for="other" class="form-radio-label">
+              <input type="radio" id="other" name="gender" value="other"> 不愿透露
+            </label>
+          </div>
+        
+        
+        <div class="form-row">
+          <label for="interest" class="form-label">您对我的兴趣爱好哪方面感兴趣</label>
+          <select id="interest" name="interest">
+            <option value="">请选择</option>
+            <option value="dance">跳舞</option>
+            <option value="reading">阅读</option>
+            <option value="listening">听音乐</option>
+            <option value="writing">随手记</option>
+            <option value="other">其他</option>
+          </select>
+        </div>
+        
+        <div class="form-row">
+          <label for="message" class="form-label">留言内容</label>
+          <textarea id="message" name="user_message" rows="5" cols="40" placeholder="可以留下您宝贵的建议或者诚挚的祝福..."></textarea>
+        </div>
+        
+        <div class="form-row">
+          <label class="form-label">您是如何了解到我的</label>
+          <div class="form-checkbox-group">
+            <label for="channel1" class="form-checkbox-label">
+              <input type="checkbox" id="channel1" name="channels" value="search"> 班级同学
+            </label>
+            <label for="channel2" class="form-checkbox-label">
+              <input type="checkbox" id="channel2" name="channels" value="social"> 社交媒体
+            </label>
+            <label for="channel3" class="form-checkbox-label">
+              <input type="checkbox" id="channel3" name="channels" value="friend"> 朋友推荐
+            </label>
+            <label for="channel4" class="form-checkbox-label">
+              <input type="checkbox" id="channel4" name="channels" value="other"> 其他途径
+            </label>
+          </div>
+        </div>
+        
+        <div class="form-row submit-row">
+          <input type="submit" value="提交留言" class="submit-button">
+          <input type="reset" value="重置表单" class="reset-button">
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer>个人小天地</footer>
+</body>
+</html>
